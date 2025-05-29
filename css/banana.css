@@ -1,0 +1,105 @@
+.banana-main{
+    width: 90vw;
+    max-width: 1100px;
+    margin: auto;
+}
+.far{
+    font-family: "Font Awesome 5 Free";
+}
+.banana-continer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin:2rem 0;
+    
+}
+.banana-img{
+    grid-column: 1/ 6;
+}
+.banana-img img{
+    width: 100%;
+}
+.banana-heading{
+    grid-column: 7/-1;
+}
+.banana-heading p{
+    padding-top: 1.5rem;
+    color: #475569;
+}
+.i-continer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem 0;
+    justify-items: center;
+    text-align: center;
+    
+}
+.i-continer i{
+    color: #645cff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.tags-continer{
+    font-size: .8rem;
+}
+.tags-continer a{
+    font-size: .7rem;
+    margin: 0 .2rem;
+    padding: .1rem .5rem;
+    background-color: #645cff;
+    color: white;
+    border-radius: 5px;
+
+}
+@media (max-width:992px) {
+    .banana-img{
+        grid-column: 1/-1;
+    }
+    .banana-heading{
+        grid-column: 1/-1;
+    }
+ 
+}
+.tool-continer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin: 3rem 0;
+}
+.instructions{
+    grid-column: 1/7;
+}
+.Ingredients{
+    grid-column: 8/-1;
+}
+.step-header{
+    padding: 1rem 0;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #645cff;
+    display: flex;
+    
+}
+.step-header div{
+    border-top: 2px solid #64748b;
+    width: 80%;
+    margin: 0 1rem;
+}
+.cups-continer{
+    margin: 1rem 0;
+    color: #334155;
+}
+.cups-continer div{
+    border-bottom: 2px solid #cbd5e1;
+    padding: .5rem 0;
+}
+.cups-continer p{
+    color: #645cff;
+}
+@media (max-width:992px) {
+    .instructions{
+        grid-column: 1/-1;
+    }
+    .Ingredients{
+        margin: 3rem 0;
+        grid-column: 1/-1;
+    }
+}
